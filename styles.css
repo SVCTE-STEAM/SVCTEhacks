@@ -242,6 +242,30 @@ textarea.input { min-height: 90px; resize: vertical; }
 }
 .nav a { color: inherit; text-decoration: none; font-size: 14px; }
 .nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
+.nav a.btn-primary, .nav a.btn-primary:hover { color: var(--color-bg); }
+
+.nav .btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.nav .btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent, color-mix(in srgb, var(--color-bg) 65%, transparent), transparent);
+  animation: nav-cta-glimmer 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes nav-cta-glimmer {
+  0%, 45% { left: -60%; }
+  75%, 100% { left: 130%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav .btn-primary::after { animation: none; display: none; }
+}
 
 /* — tables — */
 .table { width: 100%; border-collapse: collapse; font-size: 14px; }
