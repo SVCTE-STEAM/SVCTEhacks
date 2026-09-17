@@ -371,15 +371,14 @@ body { margin: 0; text-wrap: pretty; }
 .sheet-note { margin: 0; padding: var(--half) var(--leading); border-top: 1px solid var(--color-divider);
   font-size: 13px; line-height: var(--leading); color: color-mix(in srgb, var(--color-text) 70%, transparent); }
 
-.tabs { display: flex; border-bottom: 1px solid var(--color-divider); }
-.tab-btn { flex: 1; appearance: none; background: none; border: 0; cursor: pointer; font: inherit;
+.tb-tabs { display: flex; }
+.tb-tab { appearance: none; background: none; border: 0; border-left: 1px solid var(--color-divider);
+  cursor: pointer; font: inherit; white-space: nowrap;
   padding: var(--half) var(--leading); font-size: 13px; line-height: var(--leading);
   letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; font-feature-settings: "tnum" 1;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
-  border-bottom: 2px solid transparent; margin-bottom: -1px; }
-.tab-btn + .tab-btn { border-left: 1px solid var(--color-divider); }
-.tab-btn:hover { color: var(--color-text); }
-.tab-btn[aria-selected="true"] { color: var(--color-text); border-bottom-color: var(--color-accent); }
+  color: color-mix(in srgb, var(--color-text) 70%, transparent); }
+.tb-tab:hover { color: var(--color-text); }
+.tb-tab[aria-selected="true"] { color: var(--color-bg); background: var(--color-accent); }
 .tab-panel[hidden] { display: none; }
 .video-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--color-neutral-900); }
 .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
@@ -421,6 +420,8 @@ footer .tag { color: var(--color-accent-700); font-weight: 600; letter-spacing: 
   .tb-title { flex-basis: 100%; border-bottom: 1px solid var(--color-divider); }
   .title-block > .tb-cell { padding-inline: var(--half); flex: 1 0 auto; }
   .tb-title + .tb-cell { border-left: 0; padding-left: var(--leading); }
+  .tb-tabs { flex: 1 0 auto; }
+  .tb-tab { flex: 1; padding-inline: var(--half); }
   .spec thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .spec, .spec tbody, .spec td { display: block; }
   .spec tr { display: grid; grid-template-columns: max-content 1fr; column-gap: var(--half); row-gap: var(--half);

@@ -41,12 +41,11 @@
       <header class="title-block">
         <span class="tb-title">SVCTEhacks 2.0</span>
         <span class="tb-cell">Two days</span>
-        <span class="tb-cell">Sheet 01 of 01</span>
+        <div class="tb-tabs" role="tablist" aria-label="Event details tabs">
+          <button type="button" class="tb-tab" id="tab-details-btn" role="tab" aria-controls="tab-details-panel" aria-selected="true">Details</button>
+          <button type="button" class="tb-tab" id="tab-video-btn" role="tab" aria-controls="tab-video-panel" aria-selected="false" tabindex="-1">Video invite</button>
+        </div>
       </header>
-      <div class="tabs" role="tablist" aria-label="Event details tabs">
-        <button type="button" class="tab-btn" id="tab-details-btn" role="tab" aria-controls="tab-details-panel" aria-selected="true">Details</button>
-        <button type="button" class="tab-btn" id="tab-video-btn" role="tab" aria-controls="tab-video-panel" aria-selected="false" tabindex="-1">Video invite</button>
-      </div>
       <div class="tab-panel" id="tab-details-panel" role="tabpanel" aria-labelledby="tab-details-btn">
         <table class="table spec">
           <colgroup><col class="c-num"><col class="c-prop"><col class="c-val"><col class="c-rem"></colgroup>
@@ -55,7 +54,7 @@
             <tr><td class="s-num">01</td><td class="s-prop">Dates</td><td class="s-val">Feb 4–5</td><td class="s-rem">2027</td></tr>
             <tr><td class="s-num">02</td><td class="s-prop">Location</td><td class="s-val">The Hub</td><td class="s-rem">Room 812</td></tr>
             <tr><td class="s-num">03</td><td class="s-prop">Team size</td><td class="s-val">3–4</td><td class="s-rem">Students per team</td></tr>
-            <tr><td class="s-num">04</td><td class="s-prop">Open to</td><td class="s-val">MetroEd JPA</td><td class="s-rem">All 32 high schools, six districts</td></tr>
+            <tr><td class="s-num">04</td><td class="s-prop">Open to</td><td class="s-val">MetroEd JPA</td><td class="s-rem">All high schools in CUHSD, ESUHSD, LGSUHSD, MUSD, SJUSD, SCUSD</td></tr>
             <tr><td class="s-num">05</td><td class="s-prop">Devices</td><td class="s-val">BYOD</td><td class="s-rem">Bring your own laptop</td></tr>
           </tbody>
         </table>

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.querySelectorAll('[role="tablist"]').forEach(function (tabList) {
-    const tabs = [...tabList.querySelectorAll('.tab-btn')];
+    const tabs = [...tabList.querySelectorAll('.tb-tab')];
     tabs.forEach(function (tab) {
       tab.addEventListener('click', function () {
         tabs.forEach(function (t) {
