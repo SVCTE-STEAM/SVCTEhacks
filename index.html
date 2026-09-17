@@ -13,10 +13,9 @@
 
 <nav class="nav">
   <span class="nav-brand">SVCTEhacks 2.0</span>
-  <a href="#register">Register</a>
   <a href="#details" aria-current="location">Details</a>
+  <a href="#pre-register">Pre-register</a>
   <a href="#prizes">Prizes</a>
-  <a href="#calendar">Save the date</a>
   <a target="_blank" rel="noopener" class="btn btn-primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=SVCTEhacks+2.0&amp;dates=20270204T073000/20270204T154500&amp;recur=RRULE%3AFREQ%3DDAILY%3BCOUNT%3D2&amp;details=Presented+by+SVCTE+%E2%80%94+AI+Engineering%2C+Mechatronics+Engineering+%26+Cybersecurity.+Team+size%3A+3%E2%80%934.+BYOD.&amp;location=The+Hub%2C+Room+812&amp;ctz=America%2FLos_Angeles">
     <svg class="icon-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="16" y1="2" x2="16" y2="6"></line></svg>Add to calendar
   </a>
@@ -29,13 +28,49 @@
     <h1 class="display"><span class="line">Two days.</span> <span class="line">One build.</span></h1>
     <p class="sub">Organized by SVCTE's AI Engineering, Mechatronics Engineering, and Cybersecurity programs, open to students from every high school across MetroEd's six JPA districts — Campbell Union, East Side Union, Los Gatos–Saratoga Union, Milpitas Unified, San Jose Unified, and Santa Clara Unified. Form a team of three to four and build something real.</p>
     <div class="row">
-      <a href="#register" class="btn btn-primary">Register now</a>
+      <a href="#pre-register" class="btn btn-primary">Pre-register now</a>
       <span class="soon-note">Takes about two minutes — no account required.</span>
     </div>
   </section>
 
-  <section class="sheet" id="register" aria-label="Registration">
-    <span class="kicker">01 · Register</span>
+  <section class="sheet" id="details" aria-label="Event details">
+    <span class="kicker">01 · Event details</span>
+    <hr class="caption-rule">
+    <div class="plate">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <header class="title-block">
+        <span class="tb-title">SVCTEhacks 2.0</span>
+        <span class="tb-cell">Two days</span>
+        <span class="tb-cell">Sheet 01 of 01</span>
+      </header>
+      <div class="tabs" role="tablist" aria-label="Event details tabs">
+        <button type="button" class="tab-btn" id="tab-details-btn" role="tab" aria-controls="tab-details-panel" aria-selected="true">Details</button>
+        <button type="button" class="tab-btn" id="tab-video-btn" role="tab" aria-controls="tab-video-panel" aria-selected="false" tabindex="-1">Video invite</button>
+      </div>
+      <div class="tab-panel" id="tab-details-panel" role="tabpanel" aria-labelledby="tab-details-btn">
+        <table class="table spec">
+          <colgroup><col class="c-num"><col class="c-prop"><col class="c-val"><col class="c-rem"></colgroup>
+          <thead><tr><th scope="col">No.</th><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Remark</th></tr></thead>
+          <tbody>
+            <tr><td class="s-num">01</td><td class="s-prop">Dates</td><td class="s-val">Feb 4–5</td><td class="s-rem">2027</td></tr>
+            <tr><td class="s-num">02</td><td class="s-prop">Location</td><td class="s-val">The Hub</td><td class="s-rem">Room 812</td></tr>
+            <tr><td class="s-num">03</td><td class="s-prop">Team size</td><td class="s-val">3–4</td><td class="s-rem">Students per team</td></tr>
+            <tr><td class="s-num">04</td><td class="s-prop">Open to</td><td class="s-val">MetroEd JPA</td><td class="s-rem">All 32 high schools, six districts</td></tr>
+            <tr><td class="s-num">05</td><td class="s-prop">Devices</td><td class="s-val">BYOD</td><td class="s-rem">Bring your own laptop</td></tr>
+          </tbody>
+        </table>
+        <p class="sheet-note">Presented by SVCTE — AI Engineering, Mechatronics Engineering &amp; Cybersecurity.</p>
+      </div>
+      <div class="tab-panel" id="tab-video-panel" role="tabpanel" aria-labelledby="tab-video-btn" hidden>
+        <div class="video-embed">
+          <iframe src="https://drive.google.com/file/d/1wnL2YPRP2b8Q67NZZJpYlAL6P4nnTDyW/preview" allow="autoplay" allowfullscreen loading="lazy" title="SVCTEhacks 2.0 video invite"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet" id="pre-register" aria-label="Pre-registration">
+    <span class="kicker">02 · Pre-register</span>
     <hr class="caption-rule">
     <div class="plate">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
@@ -115,31 +150,6 @@
     </div>
   </section>
   <iframe name="hidden_iframe" id="hidden_iframe" title="Registration submission target" style="display:none;"></iframe>
-
-  <section class="sheet" id="details" aria-label="Event details">
-    <span class="kicker">02 · Event details</span>
-    <hr class="caption-rule">
-    <div class="plate">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <header class="title-block">
-        <span class="tb-title">SVCTEhacks 2.0</span>
-        <span class="tb-cell">Two days</span>
-        <span class="tb-cell">Sheet 01 of 01</span>
-      </header>
-      <table class="table spec">
-        <colgroup><col class="c-num"><col class="c-prop"><col class="c-val"><col class="c-rem"></colgroup>
-        <thead><tr><th scope="col">No.</th><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Remark</th></tr></thead>
-        <tbody>
-          <tr><td class="s-num">01</td><td class="s-prop">Dates</td><td class="s-val">Feb 4–5</td><td class="s-rem">2027</td></tr>
-          <tr><td class="s-num">02</td><td class="s-prop">Location</td><td class="s-val">The Hub</td><td class="s-rem">Room 812</td></tr>
-          <tr><td class="s-num">03</td><td class="s-prop">Team size</td><td class="s-val">3–4</td><td class="s-rem">Students per team</td></tr>
-          <tr><td class="s-num">04</td><td class="s-prop">Open to</td><td class="s-val">MetroEd JPA</td><td class="s-rem">All 32 high schools, six districts</td></tr>
-          <tr><td class="s-num">05</td><td class="s-prop">Devices</td><td class="s-val">BYOD</td><td class="s-rem">Bring your own laptop</td></tr>
-        </tbody>
-      </table>
-      <p class="sheet-note">Presented by SVCTE — AI Engineering, Mechatronics Engineering &amp; Cybersecurity.</p>
-    </div>
-  </section>
 
   <section class="tracks">
     <span class="kicker">03 · Challenge tracks</span>
