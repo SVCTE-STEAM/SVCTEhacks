@@ -371,6 +371,11 @@ body { margin: 0; text-wrap: pretty; }
 .sheet-note { margin: 0; padding: var(--half) var(--leading); border-top: 1px solid var(--color-divider);
   font-size: 13px; line-height: var(--leading); color: color-mix(in srgb, var(--color-text) 70%, transparent); }
 
+.reg-form { display: flex; flex-direction: column; gap: var(--space-4); max-width: 420px;
+  padding: var(--leading); }
+.reg-confirm { margin: 0; padding: var(--leading); font-size: 15px; line-height: var(--leading);
+  color: color-mix(in srgb, var(--color-text) 78%, transparent); }
+
 .tracks { padding: calc(2.5 * var(--leading)) 0; }
 .tracks p.note { font-size: 15px; line-height: var(--leading); max-width: var(--measure);
   color: color-mix(in srgb, var(--color-text) 78%, transparent);
