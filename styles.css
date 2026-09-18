@@ -232,7 +232,8 @@ textarea.input { min-height: 90px; resize: vertical; }
 
 /* — navigation — */
 .nav {
-  display: flex; align-items: center; gap: var(--space-4);
+  display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-4);
+  row-gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   border-bottom: none;
 }
@@ -312,6 +313,9 @@ body { margin: 0; text-wrap: pretty; }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--edge); }
 .nav { padding-inline: max(var(--edge), calc((100% - 1200px) / 2 + var(--edge))); }
 .nav a { white-space: nowrap; }
+@media (max-width: 760px) {
+  .nav-brand { flex-basis: 100%; margin-right: 0; }
+}
 @media (max-width: 480px) {
   .nav a:not(.btn) { display: none; }
   .nav-brand { font-size: 19px; }
