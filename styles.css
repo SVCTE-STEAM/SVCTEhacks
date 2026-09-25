@@ -164,6 +164,12 @@ figcaption {
   display: block; font-size: 18px; margin-bottom: 5px;
   color: color-mix(in srgb, var(--color-text) 70%, transparent);
 }
+fieldset.field { border: 0; padding: 0; margin: 0; min-width: 0; }
+fieldset.field > legend {
+  display: block; font-size: 18px; margin-bottom: 5px; padding: 0;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.radio-stack { display: flex; flex-direction: column; gap: var(--space-2); }
 .input {
   width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
   font-size: 21px; color: var(--color-text); caret-color: var(--color-accent);
@@ -359,8 +365,8 @@ body { margin: 0; text-wrap: pretty; }
   color: color-mix(in srgb, var(--color-text) 70%, transparent); }
 .spec { table-layout: fixed; width: 100%; }
 .spec col.c-num { width: calc(3 * var(--leading)); }
-.spec col.c-prop { width: 30%; }
-.spec col.c-val { width: 21%; }
+.spec col.c-prop { width: 20%; }
+.spec col.c-val { width: 31%; }
 .spec th, .spec td { padding: var(--half) var(--leading) var(--half) 0; vertical-align: middle; }
 .spec th:first-child, .spec td:first-child { padding-left: var(--leading); }
 .spec th { font-size: 19.5px; line-height: 1.3; font-weight: 600;
@@ -369,7 +375,7 @@ body { margin: 0; text-wrap: pretty; }
 .spec .s-num { font-size: 19.5px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-accent-700);
   font-feature-settings: "tnum" 1; }
 .spec .s-val { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 33px;
-  line-height: 1.15; letter-spacing: 0.02em; font-feature-settings: "tnum" 1; white-space: nowrap; }
+  line-height: 1.15; letter-spacing: 0.02em; font-feature-settings: "tnum" 1; }
 .spec .s-rem { color: color-mix(in srgb, var(--color-text) 78%, transparent); }
 .spec tbody tr:last-child td { border-bottom: 0; }
 .spec tbody tr:hover { background: none; }
