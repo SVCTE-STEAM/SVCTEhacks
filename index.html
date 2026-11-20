@@ -55,7 +55,7 @@
             <tr><td class="s-num">01</td><td class="s-prop">Dates</td><td class="s-val">Feb 4–5</td><td class="s-rem">2027</td></tr>
             <tr><td class="s-num">02</td><td class="s-prop">Location</td><td class="s-val">760 Hillsdale Ave, San Jose</td><td class="s-rem">Room 812, The Hub</td></tr>
             <tr><td class="s-num">03</td><td class="s-prop">Transportation</td><td class="s-val">SVCTE buses</td><td class="s-rem">Free at your home school</td></tr>
-            <tr><td class="s-num">04</td><td class="s-prop">Team size</td><td class="s-val">3–4</td><td class="s-rem">Students per team</td></tr>
+            <tr><td class="s-num">04</td><td class="s-prop">Team size</td><td class="s-val">~3</td><td class="s-rem">Students per team</td></tr>
             <tr><td class="s-num">05</td><td class="s-prop">Open to</td><td class="s-val">MetroEd JPA</td><td class="s-rem">All high schools in ESUHSD, CUHSD, LGSUHSD, MUSD, SJUSD, and SCUSD</td></tr>
             <tr><td class="s-num">06</td><td class="s-prop">Devices</td><td class="s-val">BYOD</td><td class="s-rem">Bring your own laptop</td></tr>
             <tr><td class="s-num">07</td><td class="s-prop">Experience</td><td class="s-val">None required</td><td class="s-rem">All skill levels welcome</td></tr>
@@ -170,23 +170,24 @@
             <input class="input" type="tel" id="mentor-phone" name="entry.205801974" autocomplete="tel" required>
           </div>
           <fieldset class="field">
-            <legend>February 4 shift</legend>
+            <legend>February 4 shifts <span class="legend-hint">(select all that apply)</span></legend>
             <div class="radio-stack">
-              <label class="radio"><input type="radio" name="entry.2137397113" value="7:30 - 9:30 a.m. (Mentoring)" required><span class="dot"></span>7:30 – 9:30 a.m. (Mentoring)</label>
-              <label class="radio"><input type="radio" name="entry.2137397113" value="9:30 - 11:30 a.m. (Mentoring)"><span class="dot"></span>9:30 – 11:30 a.m. (Mentoring)</label>
-              <label class="radio"><input type="radio" name="entry.2137397113" value="11:45 a.m. - 1:45 p.m. (Mentoring)"><span class="dot"></span>11:45 a.m. – 1:45 p.m. (Mentoring)</label>
-              <label class="radio"><input type="radio" name="entry.2137397113" value="1:45 p.m. - 3:45 p.m. (Mentoring)"><span class="dot"></span>1:45 – 3:45 p.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.2137397113" value="7:30 - 9:30 a.m. (Mentoring)"><span class="dot"></span>7:30 – 9:30 a.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.2137397113" value="9:30 - 11:30 a.m. (Mentoring)"><span class="dot"></span>9:30 – 11:30 a.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.2137397113" value="11:45 a.m. - 1:45 p.m. (Mentoring)"><span class="dot"></span>11:45 a.m. – 1:45 p.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.2137397113" value="1:45 p.m. - 3:45 p.m. (Mentoring)"><span class="dot"></span>1:45 – 3:45 p.m. (Mentoring)</label>
             </div>
           </fieldset>
           <fieldset class="field">
-            <legend>February 5 shift</legend>
+            <legend>February 5 shifts <span class="legend-hint">(select all that apply)</span></legend>
             <div class="radio-stack">
-              <label class="radio"><input type="radio" name="entry.1308196606" value="7:30 - 9:30 a.m. (Mentoring)" required><span class="dot"></span>7:30 – 9:30 a.m. (Mentoring)</label>
-              <label class="radio"><input type="radio" name="entry.1308196606" value="9:30 - 11:30 a.m. (Mentoring)"><span class="dot"></span>9:30 – 11:30 a.m. (Mentoring)</label>
-              <label class="radio"><input type="radio" name="entry.1308196606" value="11:45 a.m. - 1:45 p.m. (Mentoring/Judging)"><span class="dot"></span>11:45 a.m. – 1:45 p.m. (Mentoring/Judging)</label>
-              <label class="radio"><input type="radio" name="entry.1308196606" value="1:45 - 3:45  p.m. (Judging)"><span class="dot"></span>1:45 – 3:45 p.m. (Judging)</label>
+              <label class="radio"><input type="checkbox" name="entry.1308196606" value="7:30 - 9:30 a.m. (Mentoring)"><span class="dot"></span>7:30 – 9:30 a.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.1308196606" value="9:30 - 11:30 a.m. (Mentoring)"><span class="dot"></span>9:30 – 11:30 a.m. (Mentoring)</label>
+              <label class="radio"><input type="checkbox" name="entry.1308196606" value="11:45 a.m. - 1:45 p.m. (Mentoring/Judging)"><span class="dot"></span>11:45 a.m. – 1:45 p.m. (Mentoring/Judging)</label>
+              <label class="radio"><input type="checkbox" name="entry.1308196606" value="1:45 - 3:45  p.m. (Judging)"><span class="dot"></span>1:45 – 3:45 p.m. (Judging)</label>
             </div>
           </fieldset>
+          <p class="form-error" role="alert" hidden>Select at least one shift on either day.</p>
           <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
         <p class="reg-confirm" id="mentor-confirm" hidden>You're signed up — we'll follow up with shift details.</p>

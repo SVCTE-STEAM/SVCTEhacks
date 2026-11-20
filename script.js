@@ -1,12 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.reg-form').forEach(function (form) {
     const confirmMsg = form.nextElementSibling;
-    if (confirmMsg && confirmMsg.classList.contains('reg-confirm')) {
-      form.addEventListener('submit', function () {
+    const boxes = [...form.querySelectorAll('input[type="checkbox"]')];
+    const error = form.querySelector('.form-error');
+
+    boxes.forEach(function (b) {
+      b.addEventListener('change', function () { if (error) error.hidden = true; });
+    });
+
+    form.addEventListener('submit', function (e) {
+      if (boxes.length && !boxes.some(function (b) { return b.checked; })) {
+        e.preventDefault();
+        if (error) error.hidden = false;
+        return;
+      }
+      setTimeout(function () { form.reset(); }, 0);
+      if (confirmMsg && confirmMsg.classList.contains('reg-confirm')) {
         form.hidden = true;
         confirmMsg.hidden = false;
-      });
-    }
+        setTimeout(function () {
+          confirmMsg.hidden = true;
+          form.hidden = false;
+        }, 7000);
+      }
+    });
   });
 
   document.querySelectorAll('[role="tablist"]').forEach(function (tabList) {
